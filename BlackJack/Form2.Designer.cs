@@ -32,8 +32,8 @@ namespace BlackJack
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_apresentacao));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Iniciar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegra = new System.Windows.Forms.Button();
+            this.btnSobre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,40 +59,43 @@ namespace BlackJack
             this.btn_Iniciar.UseVisualStyleBackColor = true;
             this.btn_Iniciar.Click += new System.EventHandler(this.btn_Iniciar_Click);
             // 
-            // button1
+            // btnRegra
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(167, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "REGRAS";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRegra.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnRegra.Location = new System.Drawing.Point(167, 409);
+            this.btnRegra.Name = "btnRegra";
+            this.btnRegra.Size = new System.Drawing.Size(80, 29);
+            this.btnRegra.TabIndex = 3;
+            this.btnRegra.Text = "REGRAS";
+            this.btnRegra.UseVisualStyleBackColor = false;
+            this.btnRegra.Click += new System.EventHandler(this.btnRegra_Click);
             // 
-            // button2
+            // btnSobre
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(254, 409);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "SOBRE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSobre.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnSobre.Location = new System.Drawing.Point(254, 409);
+            this.btnSobre.Name = "btnSobre";
+            this.btnSobre.Size = new System.Drawing.Size(82, 29);
+            this.btnSobre.TabIndex = 4;
+            this.btnSobre.Text = "SOBRE";
+            this.btnSobre.UseVisualStyleBackColor = false;
+            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
             // form_apresentacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 450);
-            this.ControlBox = false;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSobre);
+            this.Controls.Add(this.btnRegra);
             this.Controls.Add(this.btn_Iniciar);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "form_apresentacao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blackjack (Leonardo e Thalyson)";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -103,7 +106,7 @@ namespace BlackJack
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Iniciar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegra;
+        private System.Windows.Forms.Button btnSobre;
     }
 }

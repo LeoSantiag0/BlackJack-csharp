@@ -225,6 +225,18 @@ namespace BlackJack
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form Regra = new FormRegra();
+            Regra.Show();
+            this.Visible = true;
+        }
+
+        private void btnJogoSair_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 
 

@@ -26,12 +26,26 @@ namespace BlackJack
         {
             Form jogo = new Form_jogo();
             jogo.Show();
-            this.Visible = false;
+            this.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegra_Click(object sender, EventArgs e)
+        {
+            Form Regra = new FormRegra();
+            Regra.Show();
+            this.Visible = true;
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            Form Sobre = new FormSobre();
+            Sobre.Show();
+            this.Visible = true;
         }
     }
 }

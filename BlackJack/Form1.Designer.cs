@@ -43,13 +43,15 @@ namespace BlackJack
             this.lbl_Resultado = new System.Windows.Forms.Label();
             this.lbl_legenda = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnJogoAjuda = new System.Windows.Forms.Button();
+            this.btnJogoSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_jogar_1
             // 
-            this.btn_jogar_1.Location = new System.Drawing.Point(244, 372);
+            this.btn_jogar_1.Location = new System.Drawing.Point(244, 321);
             this.btn_jogar_1.Name = "btn_jogar_1";
             this.btn_jogar_1.Size = new System.Drawing.Size(110, 29);
             this.btn_jogar_1.TabIndex = 0;
@@ -59,9 +61,9 @@ namespace BlackJack
             // 
             // btn_reiniciar
             // 
-            this.btn_reiniciar.Location = new System.Drawing.Point(524, 407);
+            this.btn_reiniciar.Location = new System.Drawing.Point(244, 407);
             this.btn_reiniciar.Name = "btn_reiniciar";
-            this.btn_reiniciar.Size = new System.Drawing.Size(120, 28);
+            this.btn_reiniciar.Size = new System.Drawing.Size(110, 29);
             this.btn_reiniciar.TabIndex = 1;
             this.btn_reiniciar.Text = "Reiniciar";
             this.btn_reiniciar.UseVisualStyleBackColor = true;
@@ -95,7 +97,7 @@ namespace BlackJack
             // btn_parar_1
             // 
             this.btn_parar_1.Enabled = false;
-            this.btn_parar_1.Location = new System.Drawing.Point(244, 408);
+            this.btn_parar_1.Location = new System.Drawing.Point(244, 356);
             this.btn_parar_1.Name = "btn_parar_1";
             this.btn_parar_1.Size = new System.Drawing.Size(110, 29);
             this.btn_parar_1.TabIndex = 5;
@@ -109,7 +111,7 @@ namespace BlackJack
             this.btn_parar_2.Name = "btn_parar_2";
             this.btn_parar_2.Size = new System.Drawing.Size(110, 29);
             this.btn_parar_2.TabIndex = 8;
-            this.btn_parar_2.Text = "Parar";
+            this.btn_parar_2.Text = "Stand";
             this.btn_parar_2.UseVisualStyleBackColor = true;
             this.btn_parar_2.Click += new System.EventHandler(this.btn_parar_2_Click);
             // 
@@ -129,7 +131,7 @@ namespace BlackJack
             this.btn_jogar_2.Name = "btn_jogar_2";
             this.btn_jogar_2.Size = new System.Drawing.Size(110, 29);
             this.btn_jogar_2.TabIndex = 6;
-            this.btn_jogar_2.Text = "Virar";
+            this.btn_jogar_2.Text = "Hit";
             this.btn_jogar_2.UseVisualStyleBackColor = true;
             this.btn_jogar_2.Click += new System.EventHandler(this.btn_jogar_2_Click);
             // 
@@ -190,12 +192,37 @@ namespace BlackJack
             this.label2.TabIndex = 12;
             this.label2.Text = "Dealer";
             // 
+            // btnJogoAjuda
+            // 
+            this.btnJogoAjuda.Location = new System.Drawing.Point(496, 407);
+            this.btnJogoAjuda.Name = "btnJogoAjuda";
+            this.btnJogoAjuda.Size = new System.Drawing.Size(75, 28);
+            this.btnJogoAjuda.TabIndex = 13;
+            this.btnJogoAjuda.Text = "Ajuda";
+            this.btnJogoAjuda.UseVisualStyleBackColor = true;
+            this.btnJogoAjuda.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnJogoSair
+            // 
+            this.btnJogoSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnJogoSair.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJogoSair.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnJogoSair.Location = new System.Drawing.Point(577, 407);
+            this.btnJogoSair.Name = "btnJogoSair";
+            this.btnJogoSair.Size = new System.Drawing.Size(68, 28);
+            this.btnJogoSair.TabIndex = 14;
+            this.btnJogoSair.Text = "< Voltar";
+            this.btnJogoSair.UseVisualStyleBackColor = false;
+            this.btnJogoSair.Click += new System.EventHandler(this.btnJogoSair_Click);
+            // 
             // Form_jogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.Capturar3;
             this.ClientSize = new System.Drawing.Size(656, 449);
+            this.Controls.Add(this.btnJogoSair);
+            this.Controls.Add(this.btnJogoAjuda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Resultado);
             this.Controls.Add(this.label1);
@@ -209,12 +236,14 @@ namespace BlackJack
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_reiniciar);
             this.Controls.Add(this.btn_jogar_1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_jogo";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Blackjack (Leonardo e Thalyson)";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Blackjack (Leonardo e Thalyson) > Partida";
             this.Load += new System.EventHandler(this.Form_jogo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -238,6 +267,8 @@ namespace BlackJack
         private System.Windows.Forms.Label lbl_Resultado;
         private System.Windows.Forms.Label lbl_legenda;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnJogoAjuda;
+        private System.Windows.Forms.Button btnJogoSair;
     }
 }
 

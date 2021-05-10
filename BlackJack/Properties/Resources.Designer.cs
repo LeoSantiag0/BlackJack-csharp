@@ -243,6 +243,16 @@ namespace BlackJack.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundoLabel4 {
+            get {
+                object obj = ResourceManager.GetObject("fundoLabel4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap J {
             get {
                 object obj = ResourceManager.GetObject("J", resourceCulture);
@@ -263,9 +273,29 @@ namespace BlackJack.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap leonardo {
+            get {
+                object obj = ResourceManager.GetObject("leonardo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Q {
             get {
                 object obj = ResourceManager.GetObject("Q", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thalyson {
+            get {
+                object obj = ResourceManager.GetObject("thalyson", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
